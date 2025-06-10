@@ -2984,7 +2984,7 @@ var gatling = (() => {
       "pk_188624285_4APC1AJV50W39BYZRJ6A1DK1PU0HRQA2"
     );
     const scn1 = (0, import_core.scenario)("Scenario 1").exec((0, import_http.http)("Session 1").get("/user").check((0, import_http.status)().is(200)));
-    const scn2 = (0, import_core.scenario)("Scenario 2").exec((0, import_http.http)("Session 2").get("/team").check((0, import_http.status)().is(200)));
+    const scn2 = (0, import_core.scenario)("Scenario 2").exec((0, import_http.http)("Session 2").get("/user").check((0, import_http.status)().is(200)));
     setUp(
       scn1.injectOpen(
         (0, import_core.constantUsersPerSec)(10).during(20),
